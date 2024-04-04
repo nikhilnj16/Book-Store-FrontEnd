@@ -1,0 +1,208 @@
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(90vh);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 30px 10px 50px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #658292;
+    padding-bottom: 25px;
+}
+.my-cart-container{
+    width: 774px;
+    height: 241px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 1px;
+    opacity: 1;
+    
+    
+    /* width: 60%; */
+    margin-left: 200px;
+    padding-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+.card-align{
+    margin-left: 40px;
+}
+.my-cart-header{
+    font: normal normal medium 18px/22px Lato;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+.img-content-align{
+    display: flex;
+    flex-direction: row;
+}
+.book-title{
+    text-align: left;
+    font: normal normal normal 14px/17px Lato;
+letter-spacing: 0px;
+color: #0A0102;
+opacity: 1;
+}
+
+.book-author{
+    text-align: left;
+    font: normal normal normal 10px/12px Lato;
+letter-spacing: 0px;
+color: #9D9D9D;
+opacity: 1;
+}
+
+.book-price{
+    text-align: left;
+    font: normal normal bold 12px/15px Lato;
+letter-spacing: 0px;
+color: #0A0102;
+opacity: 1;
+}
+.add-sub-align{
+    display: flex;
+    flex-direction: row;
+}
+.book-detail-align{
+    margin-left: 40px;
+}
+
+.sub-button{
+    width: 24px;
+height: 24px;
+background: #FAFAFA 0% 0% no-repeat padding-box;
+border: 1px solid #DBDBDB;
+border-radius: 20px;
+
+}
+.add-button{
+    width: 24px;
+    height: 24px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.no-of-book-in-cart{
+    margin-left: 10px;
+    /* border-style: groove; */
+    width: 41px;
+    height: 24px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DBDBDB;
+    border-radius: 1px;
+    text-align: center;
+
+}
+.remove-func{
+    font: normal normal normal 12px/15px Lato;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.place-order-button{
+    width: 151px;
+    height: 35px;
+    background: #3371B5 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    border-width: 0px;
+    margin-left: 500px;
+    font: normal normal medium 14px/17px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+
+}
+.customer-details-container{
+    width: 774px;
+    height: 500px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 1px;
+    opacity: 1;
+    
+    
+    /* width: 60%; */
+    margin-left: 200px;
+    padding-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+.customer-header{
+    font: normal normal normal 15px/18px Lato;
+    letter-spacing: 0px;
+    color: #333232;
+    opacity: 1;
+    margin-top: 20px;
+}
+.example-form {
+    
+    width: 100%;
+  }
+  
+.example-full-width {
+    width: 251px;
+height: 45px;
+font: normal normal normal 12px/15px Lato;
+letter-spacing: 0px;
+color: #333232;
+    
+}
+
+.input-align{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.second-input{
+    margin-left: 20px;
+}
+mat-label{
+    font: normal normal normal 12px/15px Lato;
+letter-spacing: 0px;
+color: #333232;
+}
+
+.textarea-align{
+    /* width: 100%; */
+    width: 512px;
+height: 82px;
+font: normal normal normal 12px/15px Lato;
+letter-spacing: 0px;
+color: #333232;
+margin-bottom: 20px;
+    /* margin-bottom: 30px; */
+}
+
+.radio-button-align{
+    margin-left: 60px;
+    font: normal normal normal 12px/15px Lato;
+    letter-spacing: 0px;
+    color: #333232;
+}
+
+.radio-button-align-first{
+    font: normal normal normal 12px/15px Lato;
+    letter-spacing: 0px;
+    color: #333232;
+}
+.order-details-container{
+    width: 774px;
+    height: 237px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 1px;
+    opacity: 1;
+    
+    
+    /* width: 60%; */
+    margin-left: 200px;
+    padding-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}

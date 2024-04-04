@@ -1,0 +1,143 @@
+.home-content{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(90vh);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 30px 10px 50px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #658292;
+    padding-bottom: 25px;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.book-header-align{
+    display: flex;
+}
+.books{
+    text-align: left;
+    font: normal normal normal 25px/30px Lato;
+    letter-spacing: 0px;
+    color: #0A0102;
+}
+.no-of-book{
+    text-align: left;
+    font: normal normal normal 12px/15px Lato;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+    margin-top: 10px;
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.drop-style{
+    width: 161px;
+    height: 30px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 1px;
+    opacity: 1;
+    font: normal normal normal 12px/15px Lato;
+letter-spacing: 0px;
+color: #0A0102;
+}
+.dropOption-font{
+    font: normal normal normal 12px/15px Lato;
+letter-spacing: 0px;
+color: #0A0102;
+}
+.book-contianer{
+width: 235px;
+height: 315px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #E2E2E2;
+border-radius: 3px;
+opacity: 1;
+padding: 0px;
+
+
+            
+}
+.book-img-bg{
+    height: 171px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 2px 2px 0px 0px;
+    opacity: 1;
+    padding: 0px;
+
+    
+}
+.book-image{
+    margin-top: 20px;
+}
+.book-title{
+    text-align: left;
+    font: normal normal normal 14px/17px Lato;
+letter-spacing: 0px;
+color: #0A0102;
+opacity: 1;
+}
+
+.book-author{
+    text-align: left;
+    font: normal normal normal 10px/12px Lato;
+letter-spacing: 0px;
+color: #9D9D9D;
+opacity: 1;
+}
+
+.book-price{
+    text-align: left;
+    font: normal normal bold 12px/15px Lato;
+letter-spacing: 0px;
+color: #0A0102;
+opacity: 1;
+}
+
+.add-to-bag-button{
+    margin-right: 10px;
+    font: normal normal medium 9px/10px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    
+    height: 29px;
+    background: #A03037 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    border-width: 0px;
+    opacity: 1;
+}
+.wishlist-button{
+    font: normal normal medium 11px/13px Lato;
+    letter-spacing: 0px;
+    color: #0A0102;
+    width: 83px;
+    height: 30px;
+    border: 1px solid #9D9D9D;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.added-to-bag-button{
+    font: normal normal medium 11px/13px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    border-width: 0px;
+    width: 191px;
+    height: 29px;
+    background: #3371B5 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+

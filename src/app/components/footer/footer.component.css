@@ -1,0 +1,43 @@
+.main-body{
+    height: 60px;
+    /* max-width: 1248px; */
+    
+    
+    padding-left: 230px;
+    background: #2E1D1E 0% 0% no-repeat padding-box;
+    opacity: 1;
+    
+}
+.icon-align{
+    padding: 10px;
+}
+.footer-font-Color{
+    text-align: left;
+    font: normal normal medium 12px/15px Lato;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.searchBar{
+    margin-left: 50px;
+    width: 490px;
+    height: 33px;
+/* UI Properties */
+background: #FCFCFC 0% 0% no-repeat padding-box;
+border-radius: 3px;
+opacity: 1;
+}
+.cartP{
+width: 20px;
+height: 13px;
+text-align: left;
+font: normal normal normal 10px/13px Roboto;
+letter-spacing: 0.45px;
+color: #FFFFFF;
+opacity: 1;
+}
+.cart-align{
+    display: flex;
+    margin-left: 500px;
+    margin-top: 5px;
+
+}
