@@ -17,19 +17,9 @@
     
     padding: 10px 30px;
     margin-bottom: 10%;
-    /* background: linear-gradient(to right, #ff7e5f, #feb47b, #52c234);
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #52c234);
     color: black;
-    border-width: 0; */
-    
-    font: normal normal medium 9px/10px Lato;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    
-    /* height: 29px; */
-    background: #A03037 0% 0% no-repeat padding-box;
-    border-radius: 2px;
-    border-width: 0px;
-    opacity: 1;
+    border-width: 0;
 }
 .reset-align{
     

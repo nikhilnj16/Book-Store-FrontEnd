@@ -1,0 +1,36 @@
+.container{
+    width: 30%;
+}
+
+.card-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group{
+    margin-bottom: 10px;
+    
+}
+.form-control{
+    padding: 5%;
+}
+.login-button{
+    
+    padding: 10px 30px;
+    margin-bottom: 10%;
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #52c234);
+    color: black;
+    border-width: 0;
+}
+.reset-align{
+    
+}
+.forget-reset-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}

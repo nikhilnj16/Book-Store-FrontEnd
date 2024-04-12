@@ -4,32 +4,40 @@
     <div class="card my-cart-container">
         <div class="card-align">
         <h3 class="my-cart-header">
-            My cart (2)
+            My cart 
         </h3>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let book of books">
+                <div class="card book-container m-3">
         <div class="img-content-align">
-        <img src="../../../assets/images/Image 11.png" height="85" width="65">
+        <img [src]="book.bookEntity.bookImageUrl"  height="85" width="65">
         <div class="book-detail-align">
-            <p class="book-title mb-1 mt-2">Don't Make Me Think</p>
-            <p class="book-author">By Author</p>
-            <p class="book-price">Rs.1500</p>
+            <p class="book-title mb-1 mt-2">{{ book.bookEntity.bookName }}</p>
+            <p class="book-author">By {{ book.bookEntity.bookAuthor }}</p>
+            <p class="book-price">Rs {{ book.bookEntity.bookPrice }}</p>
             <div class="add-sub-align">
-                <button (click)="subtraction()" class="sub-button">-</button>
-                <p class="no-of-book-in-cart">{{no_of_books}}</p>
-                <button (click)="addition()" class="add-button">+</button>
-                <p class="remove-func">Remove</p>
+                <button (click)="subtraction(book)" class="sub-button">-</button>
+                <p class="no-of-book-in-cart">{{book.cartQuantity}}</p>
+                <button (click)="addition(book)" class="add-button">+</button>
+                <button class="remove-func" (click)="removeCartItem(book)">Remove</button>
             </div>
 
         </div>
         </div>
-        <button class="place-order-button" (click)="showAddressToFill()">PLACE ORDER</button>
+    </div>
+</div>
+</div>
+</div>
+        <button class="cart-button" (click)="showAddressToFill()">PLACE ORDER</button>
         </div>
     </div>
 
     <div class="card customer-details-container">
-        <div class="card-align">
+        <div class="customer-details-align">
             <h3 class="customer-header">Customer Details</h3>
-            
-                <form class="example-form">
+            <div *ngIf="showCustomerDetails">
+                <form class="example-form" [formGroup]="customerDetailsForm" >
                     <div class="input-align">
                         <mat-form-field class="example-full-width" appearance="outline">
                             <mat-label>Name</mat-label>
@@ -81,34 +89,46 @@
                         </mat-radio-group>
                         </div>
                     </div>
-                    <button class="place-order-button" (click)="showAddressToFill()">CONTINUE</button>
+                    
                 </form>
-            
-       
+                <button class="place-order-button" (click)="showOrderSummary()">CONTINUE</button>
+            </div>
         </div>
     </div>
 
     <div class="card order-details-container">
-        <div class="card-align">
+        <div class="order-details-align">
             <h3 class="customer-header">Order summary</h3>
-            <div class="img-content-align">
-                <img src="../../../assets/images/Image 11.png" height="85" width="65">
-                <div class="book-detail-align">
-                    <p class="book-title mb-1 mt-2">Don't Make Me Think</p>
-                    <p class="book-author">By Author</p>
-                    <p class="book-price">Rs.1500</p>
-                    <!-- <div class="add-sub-align">
-                        <button class="sub-button">-</button>
-                        <p class="no-of-book-in-cart">1</p>
-                        <button class="add-button">+</button>
-                        <p class="remove-func">Remove</p>
-                    </div> -->
-        
+            <div *ngIf="showOrdSummary">
+                
+                <div class="container">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12" *ngFor="let book of books">
+                        <div class="card book-container m-3">
+                            <div class="img-content-align" >
+                                <img [src]="book.bookEntity.bookImageUrl"  height="85" width="65">
+                                <div class="book-detail-align">
+                                    <p class="book-title mb-1 mt-2">{{ book.bookEntity.bookName }}</p>
+                                    <p class="book-author">By {{ book.bookEntity.bookAuthor }}</p>
+                                    <p class="book-price">Rs {{ book.bookEntity.bookPrice }}</p>
+                                    <div class="add-sub-align">
+                                        <!-- <button (click)="subtraction(book)" class="sub-button">-</button> -->
+                                        <p class="no-of-book-in-cart">{{book.cartQuantity}}</p>
+                                        <!-- <button (click)="addition(book)" class="add-button">+</button> -->
+                                        <!-- <button class="remove-func" (click)="removeCartItem(book)">Remove</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>TotalCost : {{totalCost()}}</p>
+                    <p>TotalQuantity : {{totalQuantity()}}</p>
                 </div>
             </div>
             <a routerLink="/order">
-            <button class="place-order-button" (click)="showAddressToFill()">CHECKOUT</button>
+                <button class="place-order-button" (click)="checkout()">CHECKOUT</button>
             </a>
+        </div>
         </div>
     </div>
 </div>

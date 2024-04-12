@@ -1,0 +1,53 @@
+<div class="container vh-100">
+    <div class="row justify-content-center h-100">
+        <div class="card my-auto shadow">
+            <div class="card-body px-5">
+                <div class="text-center">
+                    <img src="../../../assets/images/user (1).png" width="40px" height="40px">
+                </div>
+                <div class="text-center ">
+                    <h2>Welcome</h2>
+                </div>
+                <p style="color: lightslategray; text-align: center;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please enter your login
+                    details&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <input type="name" id="userFirstName" placeholder="FirstName" class="form-control" formControlName="userFirstName"
+                            name="email" />
+                    </div>
+                    <div class="form-group">
+                        <input type="name" id="userLastName" placeholder="LastName" class="form-control" formControlName="userLastName"
+                            name="email" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="userEmailId" placeholder="Email" class="form-control" formControlName="userEmailId"
+                            name="email" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="userPassword" placeholder="Password" class="form-control"
+                            formControlName="userPassword" name="password" />
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="userAge" placeholder="Age" class="form-control" formControlName="userAge"
+                            name="email" />
+                    </div>
+                    <div class="form-group">
+                        <input type="name" id="userGender" placeholder="Gender" class="form-control" formControlName="userGender"
+                            name="email" />
+                    </div>
+                    <p *ngIf="errorMessage" class="text-danger">{{ errorMessage }}</p>
+                    <div class="login-button-align">
+                    <input type="submit" class="btn btn-primary login-button" value="SignUp" name="">
+                    </div>
+                </form>
+                <p class="text-center">Already have an account? <a routerLink="/login">Login</a></p>
+            </div>
+            <div class="card-footer text-right forget-reset-align">
+                <small><a routerLink="../forgot-password">Forgot Password</a></small>
+                <small class="reset-align"><a routerLink="../forgot-password">Reset Password</a></small>
+            </div>
+        </div>
+    </div>
+</div>

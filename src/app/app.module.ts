@@ -13,6 +13,13 @@ import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import { OrderComponent } from './components/order/order.component';
 import { LoginComponent } from './components/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SignupComponent } from './components/signup/signup.component';
+import {MatSelectModule} from '@angular/material/select';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RegisteredPageComponent } from './components/registered-page/registered-page.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,14 +28,21 @@ import { LoginComponent } from './components/login/login.component';
     CartComponent,
     FooterComponent,
     OrderComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent,
+    RegisteredPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     MatInputModule,
-    MatRadioModule
+    MatRadioModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+    HttpClientModule,
+    MatFormFieldModule
+    
   ],
   providers: [
     provideAnimationsAsync()
